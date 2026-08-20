@@ -1,0 +1,2 @@
+# SafakSayar
+Otomatik ŞafakSayar
