@@ -185,16 +185,13 @@
         );
 
 
-        // Negatif olmasını engelle
+    
         if (gun < 0) {
             gun = 0;
         }
 
 
-        // ==========================================
-        // 0 = DOĞAN GÜNEŞ
-        // ==========================================
-
+        
         if (gun === 0) {
 
             document.getElementById("safak").textContent = "0";
@@ -208,10 +205,7 @@
         }
 
 
-        // ==========================================
-        // 1 - 81 ARASI
-        // ==========================================
-
+        
         else if (gun >= 1 && gun <= 81) {
 
             document.getElementById("safak").textContent =
@@ -226,10 +220,7 @@
         }
 
 
-        // ==========================================
-        // 81'DEN FAZLA
-        // ==========================================
-
+        
         else {
 
             document.getElementById("safak").textContent =
@@ -244,10 +235,7 @@
         }
 
 
-        // ==========================================
-        // TERHİS TARİHİ
-        // ==========================================
-
+        
         document.getElementById("tarih").textContent =
             "☀️ Doğan Güneş ☀️: " +
             terhisTarihi.toLocaleDateString("tr-TR");
@@ -255,11 +243,10 @@
     }
 
 
-    // Sayfa açıldığında hesapla
+    
     hesapla();
 
 
-    // Her dakika tekrar hesapla
     setInterval(hesapla, 60000);
 
 </script>
